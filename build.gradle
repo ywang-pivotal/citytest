@@ -32,11 +32,11 @@ apply plugin: 'cloudfoundry'
 tasks."cf-push".dependsOn assemble
 
 cloudfoundry {
-    target = "https://api.run.pivotal.io"
-    organization = "platform-eng"
-    space = "mstine"
+    target = "https://api.cedemo.fe.pivotal.io"
+    organization = "workshop"
+    space = "development"
 
-    application = "cities"
+    application = "wy-cities"
     file = file("${jar.archivePath}")
     host = "cities"
     domain = "cfapps.io"
